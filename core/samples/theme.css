@@ -1,0 +1,41 @@
+div.sample {
+    margin: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+div.sample input {
+    margin: 5px 0px 0px 10px;
+    display: block;
+    min-width: 340px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+div.sample label {
+    margin: 15px 10px 0px 10px;
+    display: block;
+    padding: 5px 0px;
+}
+
+div.sample input[type=button] {
+    margin: 10px;
+    display: block;
+    min-width: 150px;
+    padding: 5px;
+    background-color: #0b488e;
+    border: 1px solid #4f95e4;
+    color: #fff;
+    font-size: 14px;
+}
+
+div.sample input[type=button]:hover {
+    background-color: #093b74;
+}
+
+.frame {
+    width: 400px;
+    height: 450px;
+    border: none;
+    background-color: #CCC;
+    margin: 10px;
+}

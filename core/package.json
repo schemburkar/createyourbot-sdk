@@ -1,0 +1,42 @@
+{
+  "name": "createyourbot.core",
+  "version": "1.0.0",
+  "description": "sdk for <CreateYourBot />",
+  "main": "dist/core.js",
+  "repository": {
+    "url": "https://github.com/schemburkar/createyourbot-sdk"
+  },
+  "scripts": {
+    "build-webpack-dev": "webpack --mode=development",
+    "build-webpack": "webpack --mode=production --env.production",
+    
+    "build-dev": "babel --out-file dist/core.js src/client.ts ",
+    "build-prod": "babel --env-name production --out-file dist/core.js src/client.ts ",
+    "build": "env-cmd -f ./.env-cmdrc -e prod -x \"npm run build-prod\"",
+    "start": "env-cmd -f ./.env-cmdrc -e dev -x \"serve -l 54601 --ssl-cert $serve_ssl_path --ssl-passphrase $serve_ssl_passphrase --ssl-format pfx\""
+  },
+  "author": "CreateYourBot.dev",
+  "license": "",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-transform-modules-umd": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-typescript": "^7.8.3",
+    "babel-plugin-transform-node-env-inline": "^0.4.3",
+    "env-cmd": "^10.1.0",
+    "typescript": "^3.8.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>&lt;CreateYourBot /&gt; - Show Bot - Using BotId & access token</title>
+    <script src="../dist/core.js"></script>
+    <link rel="stylesheet" href="./theme.css" />
+</head>
+
+<body>
+
+    <script>
+        function showBot() {
+            var botId = document.getElementById('botId').value;
+            var accessToken = document.getElementById('accessToken').value;
+            CreateYourBot.Core.createBot(botId, accessToken,
+                { root: 'sampleBot', classname: 'frame' });
+        }
+
+    </script>
+
+    <div class="sample">
+        <label for="botId">Bot Id</label>
+        <input type="text" id="botId" value="00000000-0000-0000-0000-000000000000" />
+        <label for="accessToken">Access Token</label>
+        <input type="text" id="accessToken" value="ProvideYourToken" />
+
+        <input type="button" onclick="showBot();" value="SHOW BOT" />
+    </div>
+
+    <div id="sampleBot"></div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>&lt;CreateYourBot /&gt; - Show Bot - Using Bot url</title>
+    <script src="../dist/core.js"></script>
+    <link rel="stylesheet" href="./theme.css" />
+</head>
+
+
+<body>
+
+    <script>
+        function showBotUsingUrl() {
+            var url = document.getElementById('url').value;
+            CreateYourBot.Core.createBotWithUrl(url, { root: 'sampleBot' });
+        }
+    </script>
+
+
+    <div class="sample">
+        <label for="url">Bot Url</label>
+        <input type="text" id="url" value="ProvideYourBotUrl" />
+        <input type="button" onclick="showBotUsingUrl();" value="SHOW BOT" />
+    </div>
+
+    <div id="sampleBot"></div>
+</body>
+
+</html>

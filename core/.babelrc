@@ -1,0 +1,26 @@
+{
+    "presets": [
+        "@babel/preset-typescript",
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        [
+            "transform-node-env-inline",
+            {
+                "include": [
+                    "NODE_ENV"
+                ]
+            }
+        ],
+        [
+            "@babel/plugin-transform-modules-umd",
+            {
+                "globals": {
+                    "createyourbot/core": "CreateYourBot.Core"
+                },
+                "exactGlobals": true
+            }
+        ]
+    ],
+    "moduleId": "createyourbot/core"
+}

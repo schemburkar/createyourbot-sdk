@@ -1,0 +1,14 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "UMD",
+    "outDir": "dist",
+    "lib": [ "es2015", "dom" ],
+    "sourceMap": true,
+    "declaration": true,
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
