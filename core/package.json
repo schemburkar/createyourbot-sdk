@@ -9,7 +9,6 @@
   "scripts": {
     "build-webpack-dev": "webpack --mode=development",
     "build-webpack": "webpack --mode=production --env.production",
-    
     "build-dev": "babel --out-file dist/core.js src/client.ts ",
     "build-prod": "babel --env-name production --out-file dist/core.js src/client.ts ",
     "build": "env-cmd -f ./.env-cmdrc -e prod -x \"npm run build-prod\"",
